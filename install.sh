@@ -11,6 +11,9 @@ ln /System/Library/CoreServices/"Screen Sharing.app" /Applications/"Screen Shari
 mkdir -p ~/Projects
 mkdir -p ~/Projects/exercism
 
+# Get Xcode
+xcode-select --install
+
 # Download homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
