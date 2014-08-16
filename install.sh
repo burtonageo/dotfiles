@@ -4,6 +4,9 @@
 mv bash_profile ./.bash_profile
 cp ./.bash_profile ~/.bash_profile
 
+# Symlinc the useful Screen Sharing app
+ln /System/Library/CoreServices/"Screen Sharing.app" /Applications/"Screen Sharing.app"
+
 # Create ~/Projects directory for all my programming
 mkdir -p ~/Projects
 mkdir -p ~/Projects/exercism
