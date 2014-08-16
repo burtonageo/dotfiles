@@ -21,4 +21,4 @@ brew install caskroom/cask/brew-cask
 brew cask install plug sonora qqmusic appcleaner texshop
 brew cask install selfcontrol blender chocolat anki alfred
 brew cask install transmission the-unarchiver archive-browser
-brew cask install aquamacs macvim steam vlc flux dropbox
+brew cask install aquamacs macvim steam vlc flux dropbox caffeine
