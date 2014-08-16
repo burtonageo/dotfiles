@@ -29,4 +29,4 @@ brew cask install "plug sonora qqmusic appcleaner texshop
                    transmission the-unarchiver archive-browser
                    aquamacs macvim steam vlc flux dropbox caffeine
                    skype handbrake xamarin-studio unity3d
-                   google-chrome firefox"
+                   google-chrome firefox deathtodsstore"
