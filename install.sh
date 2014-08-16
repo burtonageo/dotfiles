@@ -1,7 +1,7 @@
 #!/usr/local/env bash
 
 # move my bash_profile to my home directory
-mv bash_profile ./.bash_profile
+mv ./bash_profile ./.bash_profile
 cp ./.bash_profile ~/.bash_profile
 
 # Symlinc the useful Screen Sharing app
