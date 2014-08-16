@@ -25,5 +25,5 @@ brew cask install plug sonora qqmusic appcleaner texshop
 brew cask install selfcontrol blender chocolat anki alfred
 brew cask install transmission the-unarchiver archive-browser
 brew cask install aquamacs macvim steam vlc flux dropbox caffeine
-brew cask install skype unity3d handbrake mono xamarin-studio
+brew cask install skype handbrake mono xamarin-studio unity3d
 brew cask install google-chrome firefox
