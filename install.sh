@@ -30,3 +30,6 @@ brew cask install "plug sonora qqmusic appcleaner texshop
                    aquamacs macvim steam vlc flux dropbox caffeine
                    skype handbrake xamarin-studio unity3d
                    google-chrome firefox deathtodsstore"
+
+# Get rust
+rget
