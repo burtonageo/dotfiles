@@ -12,19 +12,19 @@ mkdir -p ~/Projects
 mkdir -p ~/Projects/exercism
 
 # Get Xcode
-xcode-select --install
+xcode-select --install &&
 
 # Download homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" &&
 
 # My cli apps
-brew install "python3 haskell-platform wget sl git bash wine mit-scheme pandoc
+"brew install  python3 haskell-platform wget sl git bash wine mit-scheme pandoc
               coq figlet cowsay cmake doxygen xctool gcc49 ddate proof-general
-              tor tree exercism rbenv ack emacs vim mono"
+              tor tree exercism rbenv ack emacs vim mono" &&
 
 # My general apps
 brew install caskroom/cask/brew-cask
-brew cask install "plug sonora qqmusic appcleaner texshop
+"brew cask install plug sonora qqmusic appcleaner texshop
                    selfcontrol blender chocolat anki alfred
                    transmission the-unarchiver archive-browser
                    aquamacs macvim steam vlc flux dropbox caffeine
