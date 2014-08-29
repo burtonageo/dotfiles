@@ -23,7 +23,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" &&
               tor tree exercism rbenv ack emacs vim mono" &&
 
 # My general apps
-brew install caskroom/cask/brew-cask
+brew install caskroom/cask/brew-cask &&
 "brew cask install plug sonora qqmusic appcleaner texshop
                    selfcontrol blender chocolat anki alfred
                    transmission the-unarchiver archive-browser
