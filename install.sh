@@ -3,7 +3,7 @@
 # move my bash_profile to my home directory
 mv ./bash_profile ~/.bash_profile
 
-# Symlinc the useful Screen Sharing app
+# Symlink the useful Screen Sharing app
 ln -s /System/Library/CoreServices/Applications/"Screen Sharing.app" /Applications/"Screen Sharing.app"
 
 # Create ~/Projects directory for all my programming
