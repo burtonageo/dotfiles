@@ -20,7 +20,7 @@ xcode-select --install &&
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" &&
 
 # My cli apps
-"brew install  python3 haskell-platform wget sl git bash wine mit-scheme pandoc
+"brew install python3 haskell-platform wget sl git bash wine mit-scheme pandoc
               coq figlet cowsay cmake doxygen xctool gcc49 ddate proof-general
               tor tree exercism rbenv ack emacs vim mono" &&
 
