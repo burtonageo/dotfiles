@@ -1,14 +1,16 @@
 #!/usr/local/env bash
 
 # move my bash_profile to my home directory
-mv ./bash_profile ./.bash_profile
-cp ./.bash_profile ~/.bash_profile
+mv ./bash_profile ~/.bash_profile
 
 # Symlinc the useful Screen Sharing app
-ln /System/Library/CoreServices/"Screen Sharing.app" /Applications/"Screen Sharing.app"
+ln -s /System/Library/CoreServices/Applications/"Screen Sharing.app" /Applications/"Screen Sharing.app"
 
 # Create ~/Projects directory for all my programming
 mkdir -p ~/Projects
+mkdir -p ~/Projects/CPP
+mkdir -p ~/Projects/Haskell
+mkdir -p ~/Projects/Rust
 mkdir -p ~/Projects/exercism
 
 # Get Xcode
