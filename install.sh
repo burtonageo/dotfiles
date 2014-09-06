@@ -1,3 +1,6 @@
+# My install script to be run on a fresh machine to get
+# all of my apss and configuration files installed
+
 #!/usr/local/env bash
 
 # move my bash_profile to my home directory
