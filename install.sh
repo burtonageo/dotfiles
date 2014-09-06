@@ -21,7 +21,8 @@ mkdir -p ~/Projects/exercism
 curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh &&
 
 # Download homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" &&
+(brew --version ||
+ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)") &&
 
 # My cli apps
 "brew install python3 haskell-platform wget sl git bash wine chibi-scheme pandoc
@@ -29,7 +30,9 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" &&
               rbenv ack emacs vim mono mercurial cmake" &&
 
 # My general apps
-brew install caskroom/cask/brew-cask &&
+(brew cask ||
+ brew install caskroom/cask/brew-cask) &&
+
 "brew cask install plug sonora qqmusic appcleaner texshop
                    selfcontrol blender chocolat anki alfred
                    transmission the-unarchiver aquamacs macvim
