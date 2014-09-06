@@ -6,6 +6,9 @@
 # move my bash_profile to my home directory
 mv ./bash_profile ~/.bash_profile
 
+# move ghci configuration to home directory
+mv ./ghci ~/.ghci
+
 # Symlink the useful Screen Sharing app
 ln -s /System/Library/CoreServices/Applications/"Screen Sharing.app" /Applications/"Screen Sharing.app"
 
@@ -18,10 +21,10 @@ mkdir -p ~/Projects/ObjC
 mkdir -p ~/Projects/exercism
 
 # Get Xcode
-(xcode-select --version || xcode-select --install) &&
-
-# Get Alcatraz package manager
-curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh &&
+(xcode-select --version ||
+  (xcode-select --install &&
+   # Get Alcatraz package manager
+   curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh)) &&
 
 # Download homebrew
 (brew --version ||
