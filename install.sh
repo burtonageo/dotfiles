@@ -32,9 +32,9 @@ curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh 
  curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install | ruby) &&
 
 # My cli apps
-brew install python3 haskell-platform wget sl git bash wine chibi-scheme pandoc &&
-brew install figlet cowsay cmake doxygen xctool gcc49 ddate tor tree &&
-brew install rbenv ack emacs vim mono mercurial cmake &&
+brew install python3 haskell-platform wget sl git bash wine chibi-scheme &&
+brew install figlet cowsay cmake xctool gcc49 ddate tor emacs vim &&
+brew install rbenv ack mono mercurial cmake pandoc tree doxygen &&
 
 # Download homebrew cask package manager for gui apps
 (brew cask ||
