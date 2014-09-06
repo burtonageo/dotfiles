@@ -24,9 +24,6 @@ mkdir -p ~/Projects/exercism
 (xcode-select --version ||
  xcode-select --install) &&
 
-# Get Alcatraz package manager for XCode (http://alcatraz.io)
-curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh;
-
 # Download homebrew package manager
 (brew --version ||
  curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install | ruby) &&
@@ -46,6 +43,10 @@ brew cask install selfcontrol blender chocolat anki alfred &&
 brew cask install transmission the-unarchiver aquamacs macvim &&
 brew cask install steam vlc flux dropbox caffeine skype handbrake &&
 brew cask install java google-chrome deathtodsstore hex-fiend;
+
+# Get Alcatraz package manager for XCode (http://alcatraz.io)
+xcode-select --version &&
+curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh;
 
 # Get rust
 cd ~/Downloads &&
