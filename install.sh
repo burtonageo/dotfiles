@@ -24,7 +24,7 @@ mkdir -p ~/Projects/exercism
 (xcode-select --version ||
  xcode-select --install) &&
 
-# Get Alcatraz package manager
+# Get Alcatraz package manager for XCode (http://alcatraz.io)
 curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh &&
 
 # Download homebrew
