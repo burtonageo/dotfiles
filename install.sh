@@ -33,7 +33,7 @@ curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh 
 
 # My cli apps
 brew install python3 haskell-platform wget sl git bash wine chibi-scheme pandoc &&
-brew install figlet cowsay cmake doxygen xctool gcc49 ddate tor tree exercism &&
+brew install figlet cowsay cmake doxygen xctool gcc49 ddate tor tree &&
 brew install rbenv ack emacs vim mono mercurial cmake &&
 
 # Download homebrew cask package manager for gui apps
