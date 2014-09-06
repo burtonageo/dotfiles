@@ -15,7 +15,7 @@ mkdir -p ~/Projects/ObjC
 mkdir -p ~/Projects/exercism
 
 # Get Xcode
-xcode-select --install &&
+(xcode-select --version || xcode-select --install) &&
 
 # Get Alcatraz package manager
 curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh &&
