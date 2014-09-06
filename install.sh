@@ -27,7 +27,7 @@ mkdir -p ~/Projects/exercism
 # Get Alcatraz package manager for XCode (http://alcatraz.io)
 curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh &&
 
-# Download homebrew
+# Download homebrew package manager
 (brew --version ||
  curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install | ruby) &&
 
@@ -36,10 +36,11 @@ brew install python3 haskell-platform wget sl git bash wine chibi-scheme pandoc 
 brew install figlet cowsay cmake doxygen xctool gcc49 ddate tor tree exercism &&
 brew install rbenv ack emacs vim mono mercurial cmake &&
 
-# My general apps
+# Download homebrew cask package manager for gui apps
 (brew cask ||
  brew install caskroom/cask/brew-cask) &&
 
+# My general apps
 brew cask install plug sonora qqmusic appcleaner texshop &&
 brew cask install selfcontrol blender chocolat anki alfred &&
 brew cask install transmission the-unarchiver aquamacs macvim &&
