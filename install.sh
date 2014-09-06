@@ -22,9 +22,10 @@ mkdir -p ~/Projects/exercism
 
 # Get Xcode
 (xcode-select --version ||
-  (xcode-select --install &&
-   # Get Alcatraz package manager
-   curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh)) &&
+ xcode-select --install) &&
+
+# Get Alcatraz package manager
+curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh &&
 
 # Download homebrew
 (brew --version ||
