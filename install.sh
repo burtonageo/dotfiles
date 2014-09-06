@@ -32,19 +32,25 @@ curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh 
  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)") &&
 
 # My cli apps
-"brew install python3 haskell-platform wget sl git bash wine chibi-scheme pandoc
-              figlet cowsay cmake doxygen xctool gcc49 ddate tor tree exercism
-              rbenv ack emacs vim mono mercurial cmake" &&
+brew install python3 haskell-platform wget sl git bash wine chibi-scheme pandoc
+brew install figlet cowsay cmake doxygen xctool gcc49 ddate tor tree exercism
+brew install rbenv ack emacs vim mono mercurial cmake &&
 
 # My general apps
 (brew cask ||
  brew install caskroom/cask/brew-cask) &&
 
-"brew cask install plug sonora qqmusic appcleaner texshop
-                   selfcontrol blender chocolat anki alfred
-                   transmission the-unarchiver aquamacs macvim
-                   steam vlc flux dropbox caffeine skype handbrake
-                   java google-chrome deathtodsstore hex-fiend"
+brew cask install plug sonora qqmusic appcleaner texshop
+brew cask install selfcontrol blender chocolat anki alfred
+brew cask install transmission the-unarchiver aquamacs macvim
+brew cask install steam vlc flux dropbox caffeine skype handbrake
+brew cask install java google-chrome deathtodsstore hex-fiend
 
 # Get rust
-rinstall
+cd ~/Downloads &&
+git clone https://github.com/rust-lang/rust &&
+cd ~/Downloads/rust &&
+mkdir -p /usr/local/Cellar/rust/0.12-pre &&
+./configure --prefix=/usr/local/Cellar/rust/0.12-pre &&
+make all install &&
+brew link rust
