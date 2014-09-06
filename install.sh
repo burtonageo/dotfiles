@@ -4,10 +4,10 @@
 #!/usr/local/env bash
 
 # move my bash_profile to my home directory
-mv ./bash_profile ~/.bash_profile
+cp ./bash_profile ~/.bash_profile
 
 # move ghci configuration to home directory
-mv ./ghci ~/.ghci
+cp ./ghci ~/.ghci
 
 # Symlink the useful Screen Sharing app
 ln -s /System/Library/CoreServices/Applications/"Screen Sharing.app" /Applications/"Screen Sharing.app"
