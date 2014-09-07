@@ -3,10 +3,10 @@
 
 #!/usr/local/env bash
 
-# move my bash_profile to my home directory
+# copy my bash_profile to my home directory
 cp ./bash_profile ~/.bash_profile
 
-# move ghci configuration to home directory
+# copy ghci configuration to home directory
 cp ./ghci ~/.ghci
 
 # Symlink the useful Screen Sharing app
