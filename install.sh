@@ -42,7 +42,8 @@ brew cask install plug sonora qqmusic appcleaner texshop &&
 brew cask install selfcontrol blender chocolat anki alfred &&
 brew cask install transmission the-unarchiver aquamacs macvim &&
 brew cask install steam vlc flux dropbox caffeine skype handbrake &&
-brew cask install java google-chrome deathtodsstore hex-fiend;
+brew cask install java google-chrome deathtodsstore hex-fiend &&
+brew cask install thong webp-quicklook noisy;
 
 # Get Alcatraz package manager for XCode (http://alcatraz.io)
 xcode-select --version &&
