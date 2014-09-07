@@ -28,14 +28,14 @@ mkdir -p ~/Projects/exercism
 (brew --version ||
  curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install | ruby) &&
 
+# Download homebrew cask package manager for gui apps
+(brew cask ||
+ brew install caskroom/cask/brew-cask);
+
 # My cli apps
 brew install python3 haskell-platform wget sl git bash wine chibi-scheme &&
 brew install figlet cowsay cmake xctool gcc49 ddate tor emacs vim &&
 brew install rbenv ack mono mercurial cmake pandoc tree doxygen &&
-
-# Download homebrew cask package manager for gui apps
-(brew cask ||
- brew install caskroom/cask/brew-cask) &&
 
 # My general apps
 brew cask install plug sonora qqmusic appcleaner texshop &&
