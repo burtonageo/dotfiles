@@ -6,6 +6,9 @@
 # copy my bash_profile to my home directory
 cp ./bash_profile ~/.bash_profile
 
+# load my bash_profile
+source ~/.bash_profile
+
 # copy ghci configuration to home directory
 cp ./ghci ~/.ghci
 
@@ -33,9 +36,9 @@ mkdir -p ~/Projects/exercism
  brew install caskroom/cask/brew-cask);
 
 # My cli apps
-brew install python3 haskell-platform wget sl git bash wine chibi-scheme &&
-brew install figlet cowsay cmake xctool gcc49 ddate tor emacs vim &&
-brew install rbenv ack mono mercurial cmake pandoc tree doxygen &&
+brew install python3 ghc cabal-install wget sl git bash wine vim doxygen &&
+brew install figlet cowsay cmake xctool gcc49 ddate tor emacs chibi-scheme &&
+brew install rbenv ack mono mercurial cmake pandoc tree  &&
 
 # My general apps
 brew cask install plug sonora qqmusic appcleaner texshop &&
@@ -49,11 +52,9 @@ brew cask install thong webp-quicklook noisy;
 xcode-select --version &&
 curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh;
 
+# Update
+update
+
 # Get rust
-cd ~/Downloads &&
-git clone https://github.com/rust-lang/rust &&
-cd ~/Downloads/rust &&
-mkdir -p /usr/local/Cellar/rust/0.12-pre &&
-./configure --prefix=/usr/local/Cellar/rust/0.12-pre &&
-make all install &&
-brew link rust
+rget
+cargo_get

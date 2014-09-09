@@ -30,6 +30,14 @@ alias rinstall="mkdir -p /usr/local/Cellar/rust/0.12-pre;
                 make all install && brew link rust"
 alias rupdate="rpull && brew rm rust && rinstall"
 
+# Cargo
+#=======
+alias cargo_get="git clone https://github.com/rust-lang/cargo;
+                 cd cargo;
+                 ./configure &&
+                 make &&
+                 make install;"
+
 # Go
 #====
 export GOPATH=~/Projects/Go:$GOPATH
