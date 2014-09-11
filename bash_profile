@@ -47,19 +47,16 @@ export PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 #=======
 export URBIT_HOME=~/Urbit
 
-# Mingw
-#=======
-export PATH="/usr/local/gcc-4.8.0-qt-4.8.4-for-mingw32/win32-gcc/bin:$PATH"
-
 # Update command
 #================
 alias update="brew update && brew upgrade --build-from-source --cc=clang;
               brew cleanup && brew prune && brew cask cleanup;
               cabal update"
 
-# Editor
+# General
 #=======
 export EDITOR="choc"
+alias please='sudo $(history -p \!\!)' 
 
 # Pretty GIT log
 #================
