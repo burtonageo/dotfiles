@@ -27,7 +27,7 @@ mkdir -p ~/Projects/exercism
 (xcode-select --version ||
  xcode-select --install) &&
 
-# Download homebrew package manager
+# Download homebrew package manager (http://brew.sh)
 (brew --version ||
  curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install | ruby) &&
 
@@ -37,8 +37,8 @@ mkdir -p ~/Projects/exercism
 
 # My cli apps
 brew install python3 ghc cabal-install wget sl git bash wine vim doxygen &&
-brew install figlet cowsay cmake xctool gcc49 ddate tor emacs chibi-scheme &&
-brew install rbenv ack mono mercurial cmake pandoc tree  &&
+brew install figlet cowsay cmake xctool ddate tor emacs chibi-scheme &&
+brew install rbenv ack mono mercurial pandoc tree  &&
 
 # My general apps
 brew cask install plug sonora qqmusic appcleaner texshop &&
@@ -55,6 +55,11 @@ curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh 
 # Update
 update
 
-# Get rust
+# Get rust (http://www.rust-lang.org)
 rget
 cargo_get
+
+# Get Cling C++ REPL (http://root.cern.ch/drupal/content/cling)
+wget --output-document=cling_build.sh https://raw.githubusercontent.com/karies/cling-all-in-one/master/clone.sh;
+chmod 755 cling_build.sh
+./cling_build.sh
