@@ -3,10 +3,10 @@
 
 #!/usr/local/env bash
 
-# copy my bash_profile to my home directory
+# copy bash_profile to home directory
 cp ./bash_profile ~/.bash_profile
 
-# load my bash_profile
+# load bash_profile
 source ~/.bash_profile
 
 # copy ghci configuration to home directory
@@ -21,11 +21,11 @@ mkdir -p ~/Projects/CPP
 mkdir -p ~/Projects/Haskell
 mkdir -p ~/Projects/Rust
 mkdir -p ~/Projects/ObjC
-mkdir -p ~/Projects/exercism
 
-# Get Xcode
-(xcode-select --version ||
- xcode-select --install) &&
+# Get Xcode and the Alcatraz package manager (http://alcatraz.io)
+( (xcode-select --version  ||
+   xcode-select --install) &&
+ curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh);
 
 # Download homebrew package manager (http://brew.sh)
 (brew --version ||
@@ -36,30 +36,36 @@ mkdir -p ~/Projects/exercism
  brew install caskroom/cask/brew-cask);
 
 # My cli apps
-brew install python3 ghc cabal-install wget sl git bash wine vim doxygen &&
-brew install figlet cowsay cmake xctool ddate tor emacs chibi-scheme &&
-brew install rbenv ack mono mercurial pandoc tree  &&
+brew install --build-from-source git ghc cabal-install python3 wine &&
+brew install --build-from-source vim bash mono doxygen chibi-scheme &&
+brew install --build-from-source cmake xctool mercurial pandoc tree &&
+brew install --build-from-source emacs ack wget figlet cowsay ddate &&
+brew install --build-from-source sl tor;
 
 # My general apps
-brew cask install plug sonora qqmusic appcleaner texshop &&
-brew cask install selfcontrol blender chocolat anki alfred &&
-brew cask install transmission the-unarchiver aquamacs macvim &&
-brew cask install steam vlc flux dropbox caffeine skype handbrake &&
-brew cask install java google-chrome deathtodsstore hex-fiend &&
-brew cask install thong webp-quicklook qlstephen qlprettypatch noisy;
-
-# Get Alcatraz package manager for XCode (http://alcatraz.io)
-xcode-select --version &&
-curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh;
+brew cask install plug sonora qqmusic appcleaner texshop selfcontrol &&
+brew cask install blender chocolat anki alfred aquamacs macvim steam &&
+brew cask install thong dropbox caffeine vlc mono-mdk google-chrome &&
+brew cask install transmission the-unarchiver handbrake skype noisy &&
+brew cask install deathtodsstore hex-fiend flux java webp-quicklook &&
+brew cask install qlstephen qlprettypatch;
 
 # Update
-update
+update;
 
-# Get rust (http://www.rust-lang.org)
-rget
-cargo_get
+# Get rust and cargo (http://www.rust-lang.org)
+rust_get;
+cargo_get;
 
 # Get Cling C++ REPL (http://root.cern.ch/drupal/content/cling)
-wget --output-document=cling_build.sh https://raw.githubusercontent.com/karies/cling-all-in-one/master/clone.sh;
-chmod 755 cling_build.sh
-./cling_build.sh
+function cling_install {
+  mkdir ~/Applications/cling;
+  mkdir ./cling;
+  cd ./cling;
+  curl -fsSL https://raw.githubusercontent.com/karies/cling-all-in-one/master/clone.sh | sh &&
+  mv -r inst/* ~/Applications/cling;
+  cd ..;
+  rm -fr ./cling;
+}
+
+(cling -help || cling_install);
