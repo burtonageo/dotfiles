@@ -36,11 +36,11 @@ mkdir -p ~/Projects/ObjC
  brew install caskroom/cask/brew-cask);
 
 # My cli apps
-brew install --build-from-source git ghc cabal-install python3 wine &&
-brew install --build-from-source vim bash mono doxygen chibi-scheme &&
-brew install --build-from-source cmake xctool mercurial pandoc tree &&
-brew install --build-from-source emacs ack wget figlet cowsay ddate &&
-brew install --build-from-source sl tor;
+brew install git ghc cabal-install python3 wine &&
+brew install vim bash mono doxygen chibi-scheme &&
+brew install cmake xctool mercurial pandoc tree &&
+brew install emacs ack wget figlet cowsay ddate &&
+brew install sl tor;
 
 # My general apps
 brew cask install plug sonora qqmusic appcleaner texshop selfcontrol &&
