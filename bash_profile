@@ -51,7 +51,7 @@ function cargo_get {
 # Update command
 #================
 function update {
-  brew update && brew upgrade --build-from-source --cc=clang;
+  brew update —all && brew upgrade;
   brew cleanup && brew prune && brew cask cleanup;
   cabal update;
 }
