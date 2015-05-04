@@ -42,11 +42,12 @@ brew install cmake xctool mercurial pandoc tree &&
 brew install emacs ack wget figlet cowsay ddate;
 
 # My general apps
-brew cask install plug appcleaner selfcontrol webp-quicklook &&
-brew cask install blender chocolat anki alfred steam flux    &&
-brew cask install thong dropbox caffeine vlc google-chrome   &&
-brew cask install transmission the-unarchiver handbrak noisy &&
-brew cask install deathtodsstore hex-fiend qlstephen qlprettypatch;
+brew cask install appcleaner selfcontrol webp-quicklook     &&
+brew cask install blender chocolat anki plug handbrake flux &&
+brew cask install thong dropbox caffeine google-chrome vlc  &&
+brew cask install transmission the-unarchiver alfred steam  &&
+brew cask install deathtodsstore hex-fiend qlstephen noisy  &&
+brew cask install qlprettypatch;
 
 # Get rust and cargo (http://www.rust-lang.org)
 brew tap cheba/rust-nightly &&
