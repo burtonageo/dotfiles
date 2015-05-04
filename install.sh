@@ -43,12 +43,11 @@ brew install emacs ack wget figlet cowsay ddate &&
 brew install sl tor;
 
 # My general apps
-brew cask install plug sonora qqmusic appcleaner texshop selfcontrol &&
-brew cask install blender chocolat anki alfred aquamacs macvim steam &&
-brew cask install thong dropbox caffeine vlc mono-mdk google-chrome &&
-brew cask install transmission the-unarchiver handbrake skype noisy &&
-brew cask install deathtodsstore hex-fiend flux java webp-quicklook &&
-brew cask install qlstephen qlprettypatch;
+brew cask install plug appcleaner selfcontrol webp-quicklook &&
+brew cask install blender chocolat anki alfred steam flux    &&
+brew cask install thong dropbox caffeine vlc google-chrome   &&
+brew cask install transmission the-unarchiver handbrak noisy &&
+brew cask install deathtodsstore hex-fiend qlstephen qlprettypatch;
 
 # Update
 update;
