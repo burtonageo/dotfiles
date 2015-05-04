@@ -29,7 +29,7 @@ mkdir -p ~/Projects/ObjC
 
 # Download homebrew package manager (http://brew.sh)
 (brew --version ||
- curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install | ruby) &&
+ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)") &&
 
 # Download homebrew cask package manager for gui apps
 (brew cask ||
