@@ -14,30 +14,6 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.5/lib:$DYLD_LIBRARY_PATH
 export RUST_PATH=~/Projects/Rust:$RUST_PATH
 export DYLD_LIBRARY_PATH=/usr/local/Cellar/rust/0.12-pre/lib:$DYLD_LIBRARY_PATH
 
-function rust_get {
-  cd ~/Downloads &&
-  git clone https://github.com/rust-lang/rust;
-}
-
-function rust_pull {
-  cd ~/Downloads/rust &&
-  git pull &&
-  cd -;
-}
-
-function rust_install {
-  mkdir -p /usr/local/Cellar/rust/0.12-pre;
-  cd ~/Downloads/rust;
-  ./configure --prefix=/usr/local/Cellar/rust/0.12-pre &&
-  make &&
-  ( (rustc --version && brew rm rust); true ) &&
-  make install &&
-  brew link rust;
-}
-
-alias rpull="rust_pull"
-alias rupdate="rpull && rust_install"
-
 # Cargo
 #=======
 function cargo_get {
