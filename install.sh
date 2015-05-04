@@ -48,12 +48,12 @@ brew cask install thong dropbox caffeine vlc google-chrome   &&
 brew cask install transmission the-unarchiver handbrak noisy &&
 brew cask install deathtodsstore hex-fiend qlstephen qlprettypatch;
 
+# Get rust and cargo (http://www.rust-lang.org)
+brew tap cheba/rust-nightly &&
+brew install rust-nightly;
+
 # Update
 update;
-
-# Get rust and cargo (http://www.rust-lang.org)
-rust_get;
-cargo_get;
 
 # Get Cling C++ REPL (http://root.cern.ch/drupal/content/cling)
 function cling_install {
