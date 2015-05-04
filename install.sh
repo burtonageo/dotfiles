@@ -37,10 +37,9 @@ mkdir -p ~/Projects/ObjC
 
 # My cli apps
 brew install git ghc cabal-install python3 wine &&
-brew install vim bash mono doxygen chibi-scheme &&
+brew install vim bash sl tor doxygen chibi-scheme &&
 brew install cmake xctool mercurial pandoc tree &&
-brew install emacs ack wget figlet cowsay ddate &&
-brew install sl tor;
+brew install emacs ack wget figlet cowsay ddate;
 
 # My general apps
 brew cask install plug appcleaner selfcontrol webp-quicklook &&
