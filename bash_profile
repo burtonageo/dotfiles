@@ -35,7 +35,7 @@ alias upd8="update"
 
 # General
 #=======
-export EDITOR="choc"
+export EDITOR=“vim”
 alias please="sudo $(history -p \!\!)"
 
 # Pretty GIT log
