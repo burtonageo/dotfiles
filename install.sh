@@ -36,10 +36,10 @@ mkdir -p ~/Projects/ObjC
  brew install caskroom/cask/brew-cask);
 
 # My cli apps
-brew install git ghc cabal-install python3 wine &&
-brew install vim bash sl tor doxygen chibi-scheme &&
-brew install cmake xctool mercurial pandoc tree &&
-brew install emacs ack wget figlet cowsay ddate;
+brew install git ghc cabal-install python3 ddate &&
+brew install vim bash sl tor xctool chibi-scheme &&
+brew install cmakedoxygen mercurial pandoc emacs &&
+brew install tree ack wget figlet cowsay;
 
 # My general apps
 brew cask install appcleaner selfcontrol webp-quicklook vlc  &&
