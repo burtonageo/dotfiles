@@ -43,7 +43,7 @@ brew install cmakedoxygen mercurial pandoc emacs &&
 brew install tree ack wget figlet cowsay;
 
 # My general apps
-brew cask install appcleaner selfcontrol webp-quicklook vlc  &&
+brew cask install appcleaner selfcontrol webpquicklook vlc   &&
 brew cask install blender chocolat anki plug handbrake flux  &&
 brew cask install thong dropbox caffeine google-chrome steam &&
 brew cask install transmission the-unarchiver qlprettypatch  &&
