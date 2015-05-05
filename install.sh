@@ -28,7 +28,7 @@ mkdir -p ~/Projects/ObjC
 ( ( (xcode-select --version ||
      xcode-select --install ||
      xcode-select --license ) &&
-   [! -f "~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin"]) &&
+   [ ! -f "~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Alcatraz.xcplugin"] ) &&
  curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh);
 
 # Download homebrew package manager (http://brew.sh)
