@@ -13,7 +13,7 @@ source ~/.bash_profile
 cp ./ghci ~/.ghci
 
 # Symlink the useful Screen Sharing app
-ln -s /System/Library/CoreServices/Applications/"Screen Sharing.app" /Applications/"Screen Sharing.app"
+ln -s "/System/Library/CoreServices/Applications/Screen Sharing.app" "/Applications/Screen Sharing.app"
 
 # Create ~/Projects directory for all my programming
 mkdir -p ~/Projects
