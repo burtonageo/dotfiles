@@ -14,16 +14,6 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.5/lib:$DYLD_LIBRARY_PATH
 export RUST_PATH=~/Projects/Rust:$RUST_PATH
 export DYLD_LIBRARY_PATH=/usr/local/Cellar/rust/0.12-pre/lib:$DYLD_LIBRARY_PATH
 
-# Cargo
-#=======
-function cargo_get {
-  git clone https://github.com/rust-lang/cargo;
-  cd cargo;
-  ./configure &&
-  make &&
-  make install;
-}
-
 # Update command
 #================
 function update {
