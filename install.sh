@@ -23,8 +23,9 @@ mkdir -p ~/Projects/Rust
 mkdir -p ~/Projects/ObjC
 
 # Get Xcode and the Alcatraz package manager (http://alcatraz.io)
-( (xcode-select --version  ||
-   xcode-select --install) &&
+( (xcode-select --version ||
+   xcode-select --install ||
+   xcode-select --license) &&
  curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh);
 
 # Download homebrew package manager (http://brew.sh)
