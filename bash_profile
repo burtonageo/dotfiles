@@ -17,7 +17,7 @@ export DYLD_LIBRARY_PATH=/usr/local/Cellar/rust/0.12-pre/lib:$DYLD_LIBRARY_PATH
 # Update command
 #================
 function update {
-  brew update —all && brew upgrade;
+  brew update && brew upgrade -all;
   brew cleanup && brew prune && brew cask cleanup;
   cabal update;
 }
