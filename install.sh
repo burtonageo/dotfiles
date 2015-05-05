@@ -3,8 +3,10 @@
 
 #!/usr/local/env bash
 
-# copy bash_profile to home directory
+# copy bash_profile and aliases to home directory
 cp ./bash_profile ~/.bash_profile
+cp ./git_aliases  ~/.git_aliases
+cp ./svn_aliases  ~/.svn_aliases
 
 # load bash_profile
 source ~/.bash_profile

@@ -39,3 +39,8 @@ git config --global alias.lg "log
 # Cling
 #=======
 alias cling=~/Applications/cling/bin/cling
+
+# Source control aliases
+#========================
+source ./.git_aliases
+source ./.svn_aliases

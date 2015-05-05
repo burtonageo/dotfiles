@@ -1,0 +1,4 @@
+alias gco="git commit -m"
+alias gcl="git clone"
+alias gpl="git pull"
+alias gpsh="git push"
