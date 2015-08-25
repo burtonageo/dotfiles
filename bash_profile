@@ -36,6 +36,14 @@ git config --global alias.lg "log
                               --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset'
                               --abbrev-commit"
 
+# SVN
+#=====
+alias sc="svn co"
+alias sd="svn diff"
+alias sst="svn status | grep -v ^X | grep -v 'Performing status on external' | grep -v ^$"
+alias sua="svn up --set-depth infinity"
+alias sup="svn up | grep -v ^$ | grep -v 'Fetching' | grep -v 'External at'"
+
 # Cling
 #=======
 alias cling=~/Applications/cling/bin/cling
