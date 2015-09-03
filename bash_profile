@@ -47,8 +47,3 @@ alias sup="svn up | grep -v ^$ | grep -v 'Fetching' | grep -v 'External at'"
 # Cling
 #=======
 alias cling=~/Applications/cling/bin/cling
-
-# Source control aliases
-#========================
-source ./.git_aliases
-source ./.svn_aliases
