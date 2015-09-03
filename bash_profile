@@ -28,8 +28,15 @@ alias upd8="update"
 export EDITOR=“vim”
 alias please="sudo $(history -p \!\!)"
 
-# Pretty GIT log
-#================
+# Git
+#=====
+alias gpom="git push origin master"
+alias gst="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gd="git diff --"
+alias gds="git diff -- --stashed"
 git config --global alias.lg "log
                               --color
                               --graph
