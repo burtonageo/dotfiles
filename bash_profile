@@ -14,6 +14,19 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.5/lib:$DYLD_LIBRARY_PATH
 export RUST_PATH=~/Projects/Rust:$RUST_PATH
 export DYLD_LIBRARY_PATH=/usr/local/Cellar/rust/0.12-pre/lib:$DYLD_LIBRARY_PATH
 
+# Cargo
+#=======
+alias cup="cargo update"
+alias ccl="cargo clean"
+alias cck="cargo check"
+alias cbr="cargo build --release"
+alias crr="cargo run --release"
+alias cb="cargo build"
+alias cr="cargo run"
+alias ct="cargo test"
+alias ctnc="cargo test -- --nocapture"
+alias cbnch="cargo bench"
+
 # Update command
 #================
 function update {
