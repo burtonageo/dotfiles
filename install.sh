@@ -17,10 +17,6 @@ ln -s "/System/Library/CoreServices/Applications/Screen Sharing.app" "/Applicati
 
 # Create ~/Projects directory for all my programming
 mkdir -p ~/Projects
-mkdir -p ~/Projects/CPP
-mkdir -p ~/Projects/Haskell
-mkdir -p ~/Projects/Rust
-mkdir -p ~/Projects/ObjC
 
 # Get Xcode and the Alcatraz package manager (http://alcatraz.io)
 ( ( (xcode-select --version ||
@@ -38,17 +34,17 @@ mkdir -p ~/Projects/ObjC
  brew install caskroom/cask/brew-cask);
 
 # My cli apps
-brew install git ghc cabal-install python3 ddate  &&
-brew install vim bash sl tor xctool chibi-scheme  &&
-brew install cmake doxygen mercurial pandoc emacs &&
-brew install tree ack wget figlet cowsay;
+brew install git ghc cabal-install ddate vim &&
+brew install bash tor xctool cmake wget tree &&
+brew install sl figlet cowsay doxygen pandoc &&
+brew install ack;
 
 # My general apps
 brew cask install appcleaner selfcontrol webpquicklook vlc   &&
-brew cask install blender chocolat anki plug handbrake flux  &&
-brew cask install thong dropbox caffeine google-chrome steam &&
+brew cask install blender chocolat plug handbrake flux steam &&
+brew cask install thong dropbox caffeine google-chrome noisy &&
 brew cask install transmission the-unarchiver qlprettypatch  &&
-brew cask install deathtodsstore hex-fiend qlstephen noisy;
+brew cask install deathtodsstore hex-fiend qlstephen;
 
 # Get rust and cargo (http://www.rust-lang.org)
 brew tap cheba/rust-nightly &&
@@ -56,16 +52,3 @@ brew install rust-nightly;
 
 # Update
 update;
-
-# Get Cling C++ REPL (http://root.cern.ch/drupal/content/cling)
-function cling_install {
-  mkdir ~/Applications/cling;
-  mkdir ./cling;
-  cd ./cling;
-  curl -fsSL https://raw.githubusercontent.com/karies/cling-all-in-one/master/clone.sh | sh &&
-  mv -r inst/* ~/Applications/cling;
-  cd ..;
-  rm -fr ./cling;
-}
-
-(cling -help || cling_install);
