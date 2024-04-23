@@ -1,38 +1,10 @@
-# GHC/Haskell
-#=============
-export PATH="~/.cabal/bin:$PATH"
-export PATH="~/.ghc/bin:$PATH"
-alias cabalupgrades="cabal list --installed  | egrep -iv '(synopsis|homepage|license)'"
-
-# CUDA
-#======
-export PATH=$PATH:/Developer/NVIDIA/CUDA-5.5/bin
-export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.5/lib:$DYLD_LIBRARY_PATH
-
-# Rust
-#======
-export RUST_PATH=~/Projects/Rust:$RUST_PATH
-export DYLD_LIBRARY_PATH=/usr/local/Cellar/rust/0.12-pre/lib:$DYLD_LIBRARY_PATH
-
-# Cargo
-#=======
-alias cup="cargo update"
-alias ccl="cargo clean"
-alias cck="cargo check"
-alias cbr="cargo build --release"
-alias crr="cargo run --release"
-alias cb="cargo build"
-alias cr="cargo run"
-alias ct="cargo test"
-alias ctnc="cargo test -- --nocapture"
-alias cbnch="cargo bench"
+alias csc='/usr/local/share/dotnet/dotnet exec "/usr/local/share/dotnet/sdk/8.0.100/Roslyn/bincore/csc.dll"'
 
 # Update command
 #================
 function update {
-  brew update && brew upgrade -all;
-  brew cleanup && brew prune && brew cask cleanup;
-  cabal update;
+  brew update && brew upgrade --all --greedy;
+  brew cleanup && brew prune;
 }
 alias upd8="update"
 
@@ -63,7 +35,3 @@ alias sd="svn diff"
 alias sst="svn status | grep -v ^X | grep -v 'Performing status on external' | grep -v ^$"
 alias sua="svn up --set-depth infinity"
 alias sup="svn up | grep -v ^$ | grep -v 'Fetching' | grep -v 'External at'"
-
-# Cling
-#=======
-alias cling=~/Applications/cling/bin/cling
